@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="Ka_Core_Image_v1" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="zfE-dS-EIg" id="8mA-AL-3ZF"/>
+                <outlet property="slider" destination="6Ml-kN-4gu" id="DnK-Ag-2ta"/>
+                <outlet property="value" destination="WtP-cn-4ru" id="hb3-Y4-JEc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Bpi-3l-0ME"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="Ka_Core_Image_v1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-dS-EIg">
+                    <rect key="frame" x="8" y="0.0" width="137" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="T4Z-O9-DqI"/>
+                        <constraint firstAttribute="width" constant="137" id="pvQ-SA-wtU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtP-cn-4ru">
+                    <rect key="frame" x="345" y="0.0" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="4nW-U5-urK"/>
+                        <constraint firstAttribute="height" constant="21" id="zan-zq-Jl0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Ml-kN-4gu">
+                    <rect key="frame" x="6" y="17" width="375" height="31"/>
+                    <connections>
+                        <action selector="sliderTouchUpInSide:" destination="-1" eventType="touchUpInside" id="QsY-sj-w0F"/>
+                        <action selector="sliderValueDidChange:" destination="-1" eventType="valueChanged" id="P0w-Fe-A5H"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WtP-cn-4ru" secondAttribute="trailing" id="3a4-h3-Nkk"/>
+                <constraint firstItem="WtP-cn-4ru" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KiB-r0-JcU"/>
+                <constraint firstItem="6Ml-kN-4gu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="cxt-9X-vSy"/>
+                <constraint firstAttribute="trailing" secondItem="6Ml-kN-4gu" secondAttribute="trailing" constant="8" id="fQp-Z9-p9O"/>
+                <constraint firstItem="zfE-dS-EIg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gho-He-eSI"/>
+                <constraint firstItem="6Ml-kN-4gu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="uGU-j9-tVz"/>
+                <constraint firstItem="zfE-dS-EIg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vA8-sV-ybx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-142" y="67"/>
+        </view>
+    </objects>
+</document>
